@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <script src="game.js"></script>
+    <script defer src="game.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <audio hidden autoplay loop>
+        <source src="assets\Dark Tension Rising Music - RF.mp3">
+    </audio>
+    <div id="start" style="display:block">
+        <h1>Escape City</h1>
+        <br>
+        <h3>Do you have what it takes to escape the horrific zombie outbreak in the city?</h3>
+        <br>
+        <button id="start-link">Start Game</button>
+    </div>
+    <div class="container" style="display:none">
         <div id="text">Text</div>
         <div id="option-buttons" class="btn-grid">
             <button class="btn">Option 1</button>
