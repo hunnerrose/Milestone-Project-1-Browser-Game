@@ -22,8 +22,15 @@ function playGame() {
     document.querySelector('.container').style.display = 'block';
     state = {}
     showTextNode(1)
+    /* let image = document.createElement('img')
+    image.src = "assets/apocalyptic_department_store.webp"
+    image.className = "image"
+    document.getElementById("setting").appendChild(image); */
 }
 
+// cant figure out how to change images w/ each new 'slide'
+let image = document.createElement('img')
+image.className = "image"
 
 function showTextNode(textNodeIndex){
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
@@ -41,6 +48,12 @@ function showTextNode(textNodeIndex){
             optionButtonsElement.appendChild(button)
         }
     })
+    function newImage(textNodeIndex)
+    {
+      image.innerText = textNodeIndex.img
+      document.getElementById("setting").appendChild(image);
+    }
+    newImage(textNodeIndex)
 }
 
 function showOption(option){
@@ -60,6 +73,7 @@ const textNodes = [
     {
       id: 1,
       text: "A deadly virus has leaked from the city's underground lab and breached the surface. 'Conveniently', you're trapped at the Auto Zone you work at, downtown, with no car. Chaos is wreaking havoc on the outside, crazies biting people, explosions erupting sporadically and crashes left & right. You go to lock the doors when a man starts banging on the glass begging you to let him in. What do you do?",
+      img: "<img src='assets/apocalyptic_department_store.webp'>",
       options: [
         {
           text: 'Let him in',
@@ -75,6 +89,7 @@ const textNodes = [
     {
       id: 2,
       text: "To his relief, you let him in & immediately lock the doors just seconds before a crazy slams against the door with nothing but blind hunger in its glazed eyes. You each back away from the door to avoid drawing any further attention and hide. 'Thank you so much, I'm David. Idk what's going on out there but I need to get TF away from this bullshit, but my car just died and won't start. Can you help?' ",
+      img: "<img src='assets/hiding_in_shadows.jpeg'>",
       options: [
         {
           text: 'Get a new car battery',
@@ -117,7 +132,7 @@ const textNodes = [
       text: 'Uh-oh, the crazy came storming towards David who fired his gun on it, but the noise drew 15 more killing you both.',
       options: [
         {
-          text: 'Restart',
+          text: 'Game Over: Restart',
           nextText: -1
         }
       ]

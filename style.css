@@ -48,6 +48,12 @@ h3 {
     box-shadow: 0 0 10px 2px;
 }
 
+.image {
+    display: block;
+    height: 200px;
+    width: 300px;
+}
+
 .btn-grid{
     display: grid;
     grid-template-columns: repeast(2, auto);
