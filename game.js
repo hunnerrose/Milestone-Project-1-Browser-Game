@@ -48,12 +48,29 @@ function showTextNode(textNodeIndex){
             optionButtonsElement.appendChild(button)
         }
     })
-    function newImage(textNodeIndex)
+
+    function newImage(textNode) {
+      if(textNode === 1){
+        document.getElementsByClassName("image").innerHTML = textNode.img
+      }
+    }
+
+    newImage(textNode)
+
+    /* if (textNodes.id === 1){
+      image.innerHTML = textNode.img
+      document.getElementsByClassName("image").appendChild(image);
+    } else if (textNodes.id === 2){
+      image.innerHTML = textNode.img
+      document.getElementsByClassName("image").appendChild(image);
+    } */
+
+    /* function newImage(textNodeIndex)
     {
       image.innerText = textNodeIndex.img
       document.getElementById("setting").appendChild(image);
     }
-    newImage(textNodeIndex)
+    newImage(textNodeIndex) */
 }
 
 function showOption(option){

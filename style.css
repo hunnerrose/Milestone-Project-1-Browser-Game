@@ -16,6 +16,7 @@ body {
     background-size: cover;
 }
 
+
 h1 {
     font-family: monospace;
     position: relative;
@@ -36,7 +37,8 @@ h3 {
             -1px -1px 0 #000;
     font-family: monospace;
     position: relative;
-    color:#bb1d1d
+    color:#bb1d1d;
+    background-color:rgb(110, 110, 110)
 }
 
 .container {
