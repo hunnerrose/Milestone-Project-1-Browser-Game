@@ -247,6 +247,6 @@ const textNodes = [
   ]
 
 const audio = new Audio();
-audio.src = "assets/Gun Cocking Sound Effect.mp3" ;
+audio.src = "assets/gun-cocking-sound-effect.mp3" ;
   
 startMenu()
