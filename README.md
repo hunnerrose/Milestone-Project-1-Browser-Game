@@ -1,6 +1,6 @@
 # Milestone-Project-1-Browser-Game
 
-I like 'Choose Your Own Adventure' or Decision-Based type games where your choices determine the outcome, like the Walking Dead games for example so I decided to try and make one myself. It's a very basic one obviously, as I'm still trying to learn how & incorporate to use all the front-end languages I've learned so far. 
+I like 'Choose Your Own Adventure' or Decision-Based type games where your choices determine the outcome, like the Walking Dead games for example so I decided to try and make one myself. It's a very basic one obviously, as I'm still trying to learn how & incorporate to use all the front-end languages I've learned so far. (Although for some reason the BG music only plays when I Go Live from my VS code, it's not playing in the deployed live link (even though the button click sound effects are)
 
 The goal of the game is to escape the city which had a virus outbreak, before they bomb it. A basic survival game. There's multiple pathways and choices that can leave users stranded and lose the game but if they make the right choices, then they manage to win, escape the city and play again if they so choose.
 
